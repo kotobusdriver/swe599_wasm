@@ -1,0 +1,12 @@
+[package]
+name = "subtractor"
+version = "0.1.0"
+authors = ["ubuntu"]
+edition = "2018"
+
+[lib]
+name = "subtractor"
+path = "src/subtractor.rs"
+crate-type =["cdylib"]
+
+[dependencies]
