@@ -27,3 +27,17 @@ it would most likely run in a Go environment. The same problem was for the Pytho
 
 As the next step, I will investigate using the Wasm Component Model tool chain - https://component-model.bytecodealliance.org/-  
 to create independent wasm components that will (hopefully) integrate nicer with the wasm ecosystem.
+
+December, 12
+
+I am exploring the WebAssembly component model. The current goal is to build a simple application consisting of two WebAssembly modules:
+yana-adder: A module that adds two numbers.
+yana-app: A module that uses yana-adder to perform addition.
+
+The modules interact via interfaces defined in wit files using the WebAssembly Interface Types (WIT). These interfaces specify the functions and data types exposed and required by each module.
+The workflow is as follows:
+Define interfaces: create wit files for both modules.
+Generate bindings: using componentize-py, generate bindings for Python and compile the modules to WebAssembly.
+Compose modules: combine the two modules into one using the WebAssembly Composition (WAC)  tool.
+Run the appl: in wasmtime environment, execute the composed WebAssembly modules.
+
