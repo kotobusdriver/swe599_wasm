@@ -1,0 +1,5 @@
+package yana:calculator;
+
+world yana-adder {
+  export adder;
+}

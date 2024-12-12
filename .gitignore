@@ -3,4 +3,4 @@
 /workspace.xml
 /.idea/
 /host.iml
-/calculator/host/target/
+/**/target/

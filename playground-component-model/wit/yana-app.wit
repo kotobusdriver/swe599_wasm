@@ -1,0 +1,9 @@
+package yana:calculator;
+
+world yana-app {
+  include wasi:cli/command@0.2.0;
+
+  import adder;
+
+  import multiply: func(a: u32, b: u32) -> u32;
+}

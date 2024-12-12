@@ -1,0 +1,8 @@
+package yana:calculator;
+
+world yana-multiplier {
+  include wasi:cli/imports@0.2.0; // TinyGo requires this import to be able to use the WASI CLI
+
+  //export multiplier;
+  export multiply: func(a: u32, b: u32) -> u32;
+}
