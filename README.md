@@ -41,3 +41,13 @@ Generate bindings: using componentize-py, generate bindings for Python and compi
 Compose modules: combine the two modules into one using the WebAssembly Composition (WAC)  tool.
 Run the appl: in wasmtime environment, execute the composed WebAssembly modules.
 
+December 15
+
+Start the toolchain container.
+```shell
+docker-compose up --build
+```
+Start a shell in the container.
+```shell
+docker exec -it wasm_toolchain_container /bin/bash
+```

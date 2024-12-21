@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wasm-toolchain:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: wasm-toolchain:latest
+    container_name: wasm_toolchain_container
+    stdin_open: true # Keep the stdin open to allow shell access
+    tty: true        # Allocate a pseudo-TTY
+    volumes:
+      - ./:/workspace # Mount the source code folder to the container's workspace
+    ports:
+      - "2222:22"
+    entrypoint: ["/bin/bash"]
