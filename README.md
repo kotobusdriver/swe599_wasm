@@ -43,11 +43,68 @@ Run the appl: in wasmtime environment, execute the composed WebAssembly modules.
 
 December 15
 
-Start the toolchain container.
+The WASM development requires a set of toolchains to be present on the developer's machine. To help with the installation steps, 
+here is a Docker environment that contains all the necessary tools. The remaining part of the document assumes the use of this  WASM toolchain shell.
+
+
+December 29
+
+Here are the complete instructions on how to run the developed application in WASM Cloud.
+
+1. Start the toolchain container. Be patient, the first time it will take a while to build the image.
 ```shell
-docker-compose up --build
+docker-compose up --build -d
 ```
 Start a shell in the container.
 ```shell
 docker exec -it wasm_toolchain_container /bin/bash
 ```
+
+2. When in the shell, make sure to navigate to the playground-wasmcloud/calculator directory.
+```shell
+cd playground-wasmcloud/calculator
+```
+
+3. Start the WASM Cloud environment
+```shell
+wash up -d
+```
+4. Build the calculator application
+```shell
+make build-all
+```
+5. Deploy the calculator application
+```shell
+make deploy-app
+ ```
+6. View the status of the application deployment. Wait until the status is "Deployed".
+```shell
+wash app list
+```
+7. Perform calculations by making HTTP calls using curl. For example, to add 20 and 5:
+```shell
+curl "http://localhost:8000?op=add&a=20&b=5"
+```
+```
+Result = 25
+```
+
+For example, to multiply 20 and 5:
+```shell
+curl "http://localhost:8000?op=mul&a=20&b=5"
+```
+```
+Result = 100
+```
+Allowed operations are add, sub, mul, and div. The operands a and b are unsigned integers.
+
+8. Delete the application (undeploy and remove from WASM Cloud)
+```shell
+make delete-app
+```
+
+9. Stop the WASM Cloud environment
+```shell
+wash down
+```
+
