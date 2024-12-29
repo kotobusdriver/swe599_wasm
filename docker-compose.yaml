@@ -13,4 +13,7 @@ services:
       - ./:/workspace # Mount the source code folder to the container's workspace
     ports:
       - "2222:22"
+      - "3030:3030"
+      - "4223:4223"
+      - "7761:7761"
     entrypoint: ["/bin/bash"]

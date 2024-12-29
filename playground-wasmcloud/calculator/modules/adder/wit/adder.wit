@@ -1,0 +1,5 @@
+package yanacalculator:adder;
+
+interface adder {
+  add: func(a: u32, b: u32) -> u32;
+}

@@ -1,0 +1,7 @@
+package yanacalculator:adder;
+
+world adder-component {
+  include wasmcloud:component-go/imports@0.1.0;
+
+  export adder;
+}

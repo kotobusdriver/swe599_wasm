@@ -1,5 +1,0 @@
-package docs:adder@0.1.0;
-world adder {
-  include wasi:cli/imports@0.2.0;
-  export add: func(x: s32, y: s32) -> s32;
-}
