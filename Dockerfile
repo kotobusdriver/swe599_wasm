@@ -84,11 +84,12 @@ RUN apt-get update && \
 RUN . $HOME/.cargo/env && \
     cargo install wit-deps-cli
 
-RUN rustup target add wasm32-wasip2
-
 RUN apt-get update && \
     apt-get install -y --no-install-recommends less && \
     rm -rf /var/lib/apt/lists/*
+
+RUN . $HOME/.cargo/env && \
+    rustup target add wasm32-wasip2
 
 # Add the necessary environment variables to the PATH
 ENV PATH="/emsdk:/emsdk/upstream/emscripten:/emsdk/node/14.15.5_64bit/bin:/root/.cargo/bin:/usr/local/go/bin:/usr/local/bin:$PATH"
