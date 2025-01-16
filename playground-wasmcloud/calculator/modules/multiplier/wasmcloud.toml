@@ -1,0 +1,9 @@
+name = "multiplier-component"
+language = "tinygo"
+type = "component"
+version = "0.1.0"
+
+[component]
+wit_world = "multiplier-component"
+wasm_target = "wasm32-wasip2"
+destination = "build/multiplier-component_s.wasm"

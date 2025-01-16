@@ -1,0 +1,5 @@
+package yanacalculator:multiplier;
+
+interface multiplier {
+  multiply: func(a: u32, b: u32) -> u32;
+}

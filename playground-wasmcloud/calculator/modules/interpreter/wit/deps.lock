@@ -1,0 +1,71 @@
+[adder]
+path = "../../adder/wit"
+sha256 = "9dee3b586914c9c1fc459076ec3c73126c279cfc66a1aee703b518567d72fefd"
+sha512 = "1cba91133f84471a5620dd3c7945c42e2829f7f74bed5a8c499cded35da54c011781271e9df8fd21015ce44ed55d6f610ecd19ebe59dfeaeeb5c8c34f46e0046"
+deps = ["wasi-cli-0.2.0", "wasi-clocks-0.2.0", "wasi-config-0.2.0-draft", "wasi-filesystem-0.2.0", "wasi-http-0.2.0", "wasi-io-0.2.0", "wasi-logging-0.1.0-draft", "wasi-random-0.2.0", "wasi-sockets-0.2.0", "wasmcloud-bus-1.0.0", "wasmcloud-component-go-0.1.0", "wasmcloud-secrets-0.1.0-draft"]
+
+[divider]
+path = "../../divider/wit"
+sha256 = "b867661319e99edafb60703187110537ab511142acc45d6729a901d0e0579a3e"
+sha512 = "4774d6d15256863f0e5be015f79881c71f3232166b20aae5a73ee8b9e37511d54d1540fc01d0469e9b779785c1e25ab03f5fb40742ee0205f613471f7fc4535e"
+deps = ["wasi-cli-0.2.0", "wasi-clocks-0.2.0", "wasi-config-0.2.0-draft", "wasi-filesystem-0.2.0", "wasi-http-0.2.0", "wasi-io-0.2.0", "wasi-logging-0.1.0-draft", "wasi-random-0.2.0", "wasi-sockets-0.2.0", "wasmcloud-bus-1.0.0", "wasmcloud-component-go-0.1.0", "wasmcloud-secrets-0.1.0-draft"]
+
+[multiplier]
+path = "../../multiplier/wit"
+sha256 = "92b60962a3764b0d0064b0230153429a6b330cde8e54b4a97c4fa06d477457e1"
+sha512 = "0d9e05267582a40b01748fa3b57fd17acd6decbf987e42fba28aae22896c1bc9800ac5a9b3e62b546adb4259a30a5bdb079daaf6a034b7915d53a0488a8c9f85"
+deps = ["wasi-cli-0.2.0", "wasi-clocks-0.2.0", "wasi-config-0.2.0-draft", "wasi-filesystem-0.2.0", "wasi-http-0.2.0", "wasi-io-0.2.0", "wasi-logging-0.1.0-draft", "wasi-random-0.2.0", "wasi-sockets-0.2.0", "wasmcloud-bus-1.0.0", "wasmcloud-component-go-0.1.0", "wasmcloud-secrets-0.1.0-draft"]
+
+[subtractor]
+path = "../../subtractor/wit"
+sha256 = "9c34221913b0da0feff434bfd7a4bc925f0c483ad994313754198bae84100b63"
+sha512 = "cf82f4b040fde103047f0d19cc87c2755a55cfba2b5b126265615376bc29cf4e2ccbbb8b5e974b8c09c1df0a3235f19f5210807546f998ea8ca5326838a10d7a"
+deps = ["wasi-cli-0.2.0", "wasi-clocks-0.2.0", "wasi-config-0.2.0-draft", "wasi-filesystem-0.2.0", "wasi-http-0.2.0", "wasi-io-0.2.0", "wasi-logging-0.1.0-draft", "wasi-random-0.2.0", "wasi-sockets-0.2.0", "wasmcloud-bus-1.0.0", "wasmcloud-component-go-0.1.0", "wasmcloud-secrets-0.1.0-draft"]
+
+["wasi-cli-0.2.0"]
+sha256 = "f3604b322facc22bb2a9acce8d6f2115449fa65964db8cd30446f0e90392266a"
+sha512 = "917a64a0827832ae5c35f3b17bca8aaacf9d7f3aa5925acd707539c95d36269b5bc3b0d9347bd848154ccc997eb8820189b80473caa338929ab9ddd65cb15f76"
+
+["wasi-clocks-0.2.0"]
+sha256 = "daf7133b4f60ba73185449327dd48d2b324799db858ab463bcd32d954a9ff394"
+sha512 = "5992296c504aebfad359ab1676bba63b5d22e33112c240a437ee733433aa50552144242f8998180ff36f0da56e5f65691dbb1898331ce878bd9fa439b8909742"
+
+["wasi-config-0.2.0-draft"]
+sha256 = "dfe88a85f585ebc03e3e2c9c9970e780a81953142674de044341e86df3ca579d"
+sha512 = "1f4f345d21dfcf31f88f52b69242b487b5e6dce827d1830cef4dc74eb30dea104a0cd0d4e469bdf7f0a337cc8cb7f09104ad8f71106128e52692711279f7960e"
+
+["wasi-filesystem-0.2.0"]
+sha256 = "739d4fc43cd51421382e5d1a0cf643a2985691d480ae75600cdcd382665b3e55"
+sha512 = "67f61ef46833060cc4d7a258da7a82024830762c4ecfd522d32bdc5e6bf4df26043f9a8c13ea38b191df180176826aa7b163816618a939015efff5987557dc16"
+
+["wasi-http-0.2.0"]
+sha256 = "385651af40f2f9a05e9c4c6d1d38cf8d899ac677727b8175a7bc6641695e059d"
+sha512 = "e07e0b60779a3e4bff9da0253ae27861f2670642682e832031b92b48caafa1ad59c0b1e3e9c50a5a388e836a1b32b9ec52919258880a6c710c0370bababfe52c"
+
+["wasi-io-0.2.0"]
+sha256 = "7c4d3e8f4e88c8c8e2869655190c57044d8f6ce8f8c511ef308d24a0ff716243"
+sha512 = "8dac828f51a1201107d4ed58abec97f29758951c48581a52b8e42d8374ea2cfde7ce5600f3343b6b058594d2912006dc8d57d3d9e850dad2c85191a34cf7c4eb"
+
+["wasi-logging-0.1.0-draft"]
+sha256 = "48477c54dd4fb3c18a7c84595ff3fb5c5a662ffc400b7f568773529c586fbf65"
+sha512 = "9733654e4cf0bc32536187240e5288850eb8ff10c436eb826b0d4a252c0a1d40e922cd7b1038355fa784306d99f2ca2c3d9e9cbb03e4e0703bea45440809baa4"
+
+["wasi-random-0.2.0"]
+sha256 = "efcdf344435591830f5fbed67a2c215bba112893518a8ef4c7234a4796b8dbcd"
+sha512 = "c78a10e9b6401116eac703430609a849854a27a4ff3bc7737d514536a9c16a2fc206a35f8f96b7c40f254d6a66e6873361970754fa69b856025886cd462a2832"
+
+["wasi-sockets-0.2.0"]
+sha256 = "aa3c13fee8c788c95de5a917a54d776d5adb2afd90a77224864941ce27c5d471"
+sha512 = "4e3be65dd127ccd4bfa1af8f86fea556d6e22d25e4b637f9b9ebf66ae1f6331f904edff042adc9be16fec511e3295170e6c13516715d2cd3e5aaffbd96158fa9"
+
+["wasmcloud-bus-1.0.0"]
+sha256 = "71241f10bbbd021edf253f491eee20d1b6ddcf05eeac8fc9b21f030289ef5c12"
+sha512 = "70e016296cad149806b953dd1217bcda9cbdbc617557eab6d63d789138bd9928a72ea40a471dace93b8176ce20dc9e1d62ea61dafe8c53fda46bdb0a94f2b930"
+
+["wasmcloud-component-go-0.1.0"]
+sha256 = "3799d248766bb1e8888f27a8237ae00c888e9814939735434b11863541c39beb"
+sha512 = "cc33e7f1daa01c5a2b4b2c49caaffdfd82d77fde865bd56dbd854608bb7dd99a362283fc520ae028d052b0957857dde666f903c9e3b5aa5dde031f14d5e43f57"
+
+["wasmcloud-secrets-0.1.0-draft"]
+sha256 = "72b39bdc1f627b55b981ce3874b48bfb3ff6b5fba0b2874fb5479acfa6f0ef60"
+sha512 = "25077c99cc633fde2064193f3dfdb731ff8393e42d3217ebb82cc0595cf705efca12213a756b4f01d79426f6983c09f92dc0e5a078d4ee3d4b78221b708dacbe"

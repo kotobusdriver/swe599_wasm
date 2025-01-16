@@ -1,0 +1,4 @@
+adder = "../../adder/wit"
+subtractor = "../../subtractor/wit"
+multiplier = "../../multiplier/wit"
+divider = "../../divider/wit"

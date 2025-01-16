@@ -1,0 +1,10 @@
+name = "divider-component"
+language = "python" 
+type = "component"
+version = "0.1.0"
+
+[component]
+# NOTE: The that the 'build' directory must be available, otherwise the build command will fail.
+build_command = "componentize-py -d ./wit -w divider-component componentize app -o build/divider-component.wasm"
+build_artifact = "build/divider-component.wasm"
+destination = "build/divider-component_s.wasm"

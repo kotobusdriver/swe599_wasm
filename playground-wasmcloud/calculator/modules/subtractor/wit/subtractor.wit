@@ -1,0 +1,5 @@
+package yanacalculator:subtractor;
+
+interface subtractor {
+  subtract: func(a: u32, b: u32) -> u32;
+}

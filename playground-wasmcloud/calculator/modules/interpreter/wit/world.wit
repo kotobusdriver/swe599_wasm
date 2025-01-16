@@ -1,0 +1,13 @@
+package yanacalculator:interpreter;
+
+world interpreter-component {
+    include wasmcloud:component-go/imports@0.1.0;
+
+    export wasi:http/incoming-handler@0.2.0;
+    import wasi:logging/logging@0.1.0-draft;
+
+    import yanacalculator:adder/adder;
+    import yanacalculator:subtractor/subtractor;
+    import yanacalculator:multiplier/multiplier;
+    import yanacalculator:divider/divider;
+}

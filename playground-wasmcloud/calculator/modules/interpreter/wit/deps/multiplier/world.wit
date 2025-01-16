@@ -1,0 +1,7 @@
+package yanacalculator:multiplier;
+
+world multiplier-component {
+  include wasmcloud:component-go/imports@0.1.0;
+
+  export multiplier;
+}
