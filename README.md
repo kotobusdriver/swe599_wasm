@@ -48,6 +48,7 @@ here is a Docker environment that contains all the necessary tools. The remainin
 
 
 December 29
+![image](https://github.com/user-attachments/assets/89580d23-dc48-4bd0-852f-f8771688b1b3)
 
 Here are the complete instructions on how to run the developed application in WASM Cloud.
 
